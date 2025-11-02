@@ -3,16 +3,27 @@
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
     <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default"></script>
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>Talks | WDSMP 2025</title>
+    <script>
+        // 配置 MathJax，启用 $ 作为行内公式分隔符
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']] // 支持 $...$ 和 \(...\) 两种行内格式
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -57,17 +68,20 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="title-special">
-                Interesting Title of a Talk
+                Generalized u-Gibbs Measures for $ C^{\infty} $ Diffeomorphism
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Snir Ben Ovadia (Hebrew University of Jerusalem)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                This is the abstract
+                We show that for every $ C^{\infty} $ diffeomorphism of a closed Riemannian manifold, if there exists a positive volume set of points
+                with a positive Lyapunov exponent (in a weak sense) then there exists an invariant probability measure with a disintegration by
+                absolutely continuous conditionals on disks subordinated to unstable leaves. As an application, we solve the strong Viana conjecture
+                in any dimension. This is joint work with D. Burguet.
             </td>
         </tr>
     </table>
@@ -76,21 +90,270 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="title-special">
-                Interesting Title of a Talk
+                Regularity and Lyapunov Rigidity of Stationary Measures
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Aaron Brown (Northwestern University)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                This is the abstract
+                For non-linear random walks on the 2-torus, we study the regularity of stationary measures. Perturbing the generators of certain (Zariski dense) affine random walks,
+                we show the only (ergodic) non-atomic stationary measure is absolutely continuous.
+                In particular, there are no stationary measures of fractal dimension.  One can study the top Lyapunov exponent relative to the absolutely continuous stationary measure.
+                Entropy considerations give an inequality between the top Lyapunov exponent for the non-linear and affine random walks.
+                For random walks satisfying a cone condition, equality holds precisely when non-linear random walk is smoothly conjugate to an affine random walk.
+                This is joint with Homin Lee, Davi Obata, and Yuping Ruan and with Yi Shi.
             </td>
         </tr>
     </table>
 
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Heat Equation from a Deterministic Dynamics
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Giovanni Canestrari (University of Toronto)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                I will describe a derivation of the heat equation in the thermodynamic limit, with a diffusive scaling,
+                from a purely deterministic dynamics satisfying Newton's equations under a time-dependent external field. (Work in collaboration with C. Liverani and S. Olla).
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Ergodicity of Asymmetric Lemon Billiards
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Boris Hasselblatt (Tufts University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Lemon billiards consist of the intersection of two circles of which one contains the centers of both.
+                These do not satisfy the usual criteria for hyperbolicity but have been known to be hyperbolic.
+                Wentao Fan established that the hyperbolicity (of the return to a suitable section) is uniform if the larger radius is large enough,
+                and that known conditions for (first local, then global) ergodicity and indeed mixing properties are satisfied.
+                This includes control of singularity curves which in this case do not seem to fit the usual requirements:
+                Fan obtains alignment, regularity, contraction control and the Sinai-Chernov Ansatz conditions.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Derivatives of the Volume Dimension for Polynomial Skew Products
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Yan Mary He (University of Oklahoma)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Around 1980, David Ruelle considered an asymptotic expansion of the Hausdorff dimension of Julia sets of the quadratic
+                family $ f_c(z) = z^2+c $ near $ c=0 $. In particular, Ruelle’s results states that $ H.dimJ_c = 1 + |c|^2/(2\log 2) + O(|c|^3) $ as $|c| \to 0 $.
+                In this talk, we consider an analogue of this question for the family $ f_t(z,w)=(z^d,w^d+t(b_2(x)w^{d-2} + … + b_d(x))) $ of polynomial skew products of $CP^2$ near $t=0$.
+                As holomorphic dynamical systems in higher dimensions are non-conformal, we replace Hausdorff dimension by volume dimension (that we introduced earlier) and consider its asymptotic expansion.
+                This is joint work with Fabrizio Bianchi.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Rapid Mixing for Random Walks on Nilmanifolds.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Minsung Kim (KTH)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                In chaotic systems, the mixing property is known for the fast decay of correlation. It is called rapid mixing if the correlation function decays super-polynomially.
+                The mixing mechanism for hyperbolic systems and its compact group extensions were studied by Dolgopyat in a series of his papers in the late 90s'.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Counting, Equidistribution, and Geometry of Periodic Diagonal Orbits
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Jialun Li (Fudan University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                I will begin with the classical setting of the modular surface: the unit tangent bundle of the modular curve $ T^1(SL(2,Z)\backslash H)=SL(2,Z)\backslash SL(2,R) $,
+                where periodic geodesics correspond to periodic orbits of the diagonal subgroup. Margulis and Bowen established dynamical frameworks for
+                studying these orbits, while Selberg and Sarnak developed spectral and number-theoretic approaches.
+                We then turn to the higher-rank generalization, periodic diagonal orbits on $SL(3,Z)\backslash SL(3,R)$. In this case, each periodic diagonal orbit is
+                a two-dimensional flat torus embedded in the space. Different counting problems emerge, depending on how one orders these tori--whether by dynamical ordering,
+                geometric ordering or arithmetic ordering. The dynamical and geometric ordering are closely connected through the shapes of the flat tori.
+                Finally, I will discuss my recent joint work with Thi Dang and Nihar Gargava on the density of shapes of periodic tori.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Ergodic Solutions for 1D Stochastic Burgers Equation with Space-time Homogeneous Noise
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Liying Li (SUSTech)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We study the stochastic Burgers equation on the real
+                line, forced by a white-in-time, color-in-space homogeneous noise, with
+                either positive or zero viscosity. Under mild assumptions on the
+                forcing, we establish that for every fixed average velocity, a unique
+                ergodic solution exists and the One Force --- One Solution principle
+                holds. Moreover, in the inviscid limit the positive viscosity ergodic
+                solutions will converge to the zero-viscosity ones. The analysis
+                utilizes the connection between the Burgers equation and the associated
+                variational problems and direct polymers models, where the ergodic
+                solution problem can be reformulated in terms of the existence of the
+                infinite-volume and zero-temperature limits of the polymer measures.
+                Finally, we will discuss the generalizations and challenges in higher
+                dimensions and for general non-quadratic Hamiltonians, as well as the
+                connection to KPZ universality.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Delocalization for Random Schr&oumldinger Operators on $ Z^d $ with Decaying Bernoulli Potential
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Yunfeng Shi (Sichuan University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                In this talk, we mainly focus on the delocalization for random Schr&oumldinger operators on $ Z^d $ with decaying Bernoulli potential.
+                In particular, we will introduce the pioneering works of Bourgain on this topic.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                On the Universality Conjecture for Hamiltonian Systems with 2 Degrees of Freedom.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Dmitry Turaev (Imperial College London)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We discuss the conjecture claiming that every Hamiltonian system, which is not integrable, not uniformly partially hyperbolic,
+                nor energy homogeneous, is universal — it accurately represents all symplectic dynamics with the corresponding number of degrees of freedom.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Large Entropy of Non-hyperbolic Measures
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Raul Ures (SUSTech)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                For a partially hyperbolic diﬀeomorphism with 1-dimensional center, we introduce a counting function, which counts the disjoint preimages of
+                unit disks on every unit unstable disk where the dynamics in the center direction are expanding or contracting. This function is semi-lower
+                continuous with respect to the diffeomorphism, and is a lower bound of the supremum of the metric entropy of non-hyperbolic measures $ I(f) $.
+                As an application, we can estimate a lower bound of the function $ I(f) $ for a $ C^{1} $ open and dense subset of $C^2$ volume preserving partially hyperbolic diffeomorphisms
+                with 1-dimensional center, and we are going to show that for a large family of $ C^{1} $ partially hyperbolic diffeomorphisms, this lower bound is indeed sharp by
+                considering the iterations. Several partially hyperbolic diﬀeomorphisms are studied: partially hyperbolic diffeomorphism with circle bundle; perturbation of
+                the time-one map of hyperbolic geodesic ﬂows; some kind of derived from Anosov diffeomorphisms. A similar argument also shows that for a family of $SL(2, \mathbb{R})$ random
+                matrices $\begin{pmatrix} 2 & 0 \\ 0 & 1/2 \end{pmatrix}$ and $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, this estimation is sharp for $ \theta \ne 0 $ sufficiently small, and
+                in particular, $ I\ge 4\theta \log 2/\pi $. This talk is based on joint work with Lorenzo D&iacuteaz, Xiaodong Wang, and Jiagang Yang.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Kac's Program for the Landau Equation
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Zhenfu Wang (Peking University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We study the derivation of the spatially homogeneous Landau equation from the mean-field limit of a conservative N-particle system,
+                obtained by passing to the grazing limit on Kac's walk in his program for the Boltzmann equation. Our result covers the full range of interaction potentials,
+                including the physically important Coulomb case. This provides the first resolution of propagation of chaos for a many-particle system approximating
+                the Landau equation with Coulomb interactions, and the first extension of Kac's program to the Landau equation in the soft potential regime.
+                The convergence is established in weak, Wasserstein, and entropic senses,together with strong L1 convergence. To handle the singularity of soft potentials,
+                we extend the duality approach of Bresch-Duerinckx-Jabin and establish key functional inequalities, including an extended commutator estimate and a new
+                second-order Fisher information estimate. Based on a joint work with Xuanrui Feng (PKU).
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="title-special">
+                Perturbation of the Time-1 Map of a Generic Volume-preserving 3-dimensional Anosov Flow
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Zhiyuan Zhang (Imperial College London)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                In a work-in-progress with Masato Tsujii, we show that any $C^r$ diffeomorphism that is sufficiently close to the time-1 map of a $C^r$ generic 
+                volume-preserving 3D Anosov flow (for some large $r$) is topologically mixing and has a unique Gibbs state.
+            </td>
+        </tr>
+    </table>
 
     <footer>
         &copy; WDSMP2025
